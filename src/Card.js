@@ -36,14 +36,14 @@ const Card = ({number, cardPassword, text}) => {
                     <input type='text' name='contraseña' value={password} onChange={handlePassword}/>
 
                     <button onClick={rotateCard}>Flip</button>
-                    {isCorrect ? null : <p>Contraseña incorrecta</p>}
+                    {isCorrect ? null : <p className='error-message'>Contraseña incorrecta</p>}
 
 
                 </div>
 
                 <div className="theback cardbody" onClick={() => setRotate(false)}>
                     <h3>Porque...</h3> 
-                    <p> {text} </p>
+                    <p>{text}</p>
                 </div>
             </div>
         </div>

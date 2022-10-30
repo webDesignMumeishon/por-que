@@ -44,17 +44,29 @@
     border-radius: 20px;
 }
 
+.thefront > button:hover{
+    background-color: #fafaface;
+}
+
 .thefront > input{
     width: 90%;
     padding: 8px;
     text-align: center;
     font-size: 16px;
+    outline: none;
+
 }
 
 .theback{
     backface-visibility:hidden;  
     background-color: #fafafa;
     color: #333;
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
+}
+
+.error-message{
+    background-color: red;
+    width: 100%;
+    border-radius: 10px;
 }
 
