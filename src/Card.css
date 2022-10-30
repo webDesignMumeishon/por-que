@@ -1,0 +1,60 @@
+.maincontainer{
+    position: relative;
+    width: 290px;
+    height: 320px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.cardbody{
+    position: absolute;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    border: #fff solid 1px;
+}
+
+.thefront{
+
+    backface-visibility: hidden;  
+    background-color: #ff748c;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.thefront > button{
+    margin-top: 40px;
+    width: 90%;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.thefront > input{
+    width: 90%;
+    padding: 8px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.theback{
+    backface-visibility:hidden;  
+    background-color: #fafafa;
+    color: #333;
+    transform: rotateY(180deg)
+}
+

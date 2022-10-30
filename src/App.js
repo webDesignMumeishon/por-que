@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './Card';
+import data from './data'
 
 function App() {
+
+  const cardData = Array.from(Array(6).keys())
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Por qué ?</h1>
+
+        <h2>Espero que hayas encontrado todos los codigos</h2>
+        
+        <h3>En las siguientes cartas vas a encontrar motivos por los que hice esta pagina.</h3>
+
+
+      <div className='cardsWrapper'>
+        {cardData.map(element => {
+          const index = element + 1
+          return (
+            <Card 
+              number={data[index].number} 
+              cardPassword={data[index].password} 
+              text={data[index].text}
+              key={index}
+            />
+          )
+        })}
+      </div>
+
     </div>
   );
 }
