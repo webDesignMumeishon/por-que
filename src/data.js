@@ -24,7 +24,8 @@ const data = {
         number: '4',
         password: '1234',
         text: `Dudaria mucho en viajar a algun lado si es que estamos juntos. Quiero recorrer cada rincon con vos. 
-        Comer pastas en algun pueblo en Italia, y pasear en bote en el canal de Venecia`
+        Comer pastas en algun pueblo en Italia, y pasear en bote en el canal de Venecia son solo algunas de las cosas que me imagino en el 
+        corto plazo.`
     },
 
     5: {
